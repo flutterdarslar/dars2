@@ -30,7 +30,7 @@ class _ChatUiState extends State<ChatUi> {
     });
   }
 
-  double hText = 80;
+  double hText = 60;
 
   @override
   Widget build(BuildContext context) {
@@ -87,6 +87,8 @@ class _ChatUiState extends State<ChatUi> {
                   width: w * 0.8,
 
                   padding: EdgeInsets.all(5),
+
+
                   child: TextFormField(
 
                     maxLines: null,
@@ -104,7 +106,7 @@ class _ChatUiState extends State<ChatUi> {
 
                       else{
                         setState(() {
-                          hText = 80;
+                          hText = 60;
                         });
                       }
                       log(val);
